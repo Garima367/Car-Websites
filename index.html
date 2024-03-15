@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarSell24X7</title>
+    <!-- import CSS file -->
+    <link rel="icon" href="logo.jpg" type="image/icon type">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/357f126d4b.js" crossorigin="anonymous"></script>
+    <script>
+        function hello2() {
+            document.getElementById("check").style.display = 'block';
+        }
+        function close() {
+            document.getElementById("check").style.display = 'none';
+        }
+        function cross() {
+            alert("You are about to close this tab\nYou will be redirected to Login Page");
+            window.location = ('http://127.0.0.1:5500/folder/login.html');
+        }
+    </script>
+</head>
+
+<body>
+
+    <button id="cross" onclick="cross()"><i class="fa-regular fa-rectangle-xmark fa-2xl"></i></button>
+
+    <!-- header section starts -->
+    <header class="header" id="main">
+
+        <a href="#" class="logo">CarSell <span>24X7</span></a>
+        <!-- nav-bar section  -->
+        <nav class="navbar">
+
+            <a href="#home">Home</a>
+            <a href="#vehicles">Vehicles</a>
+            <a href="#services">Services</a>
+            <a href="#featured">Features</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+
+        <!-- login button  -->
+        <div id="login-btn">
+            <a href="login.html" target="_blank"><button type="button" class="btn">login</button></a>
+            <i class="fa-solid fa-user"></i>
+        </div>
+    </header>
+
+    <!-- home section starts -->
+    <section class="home" id="home">
+        <h1 class="home-parallax" data-speed="-2">Find your car</h1>
+        <img src="header.jpeg" alt="">
+        <a href="#vehicles"><button class="btn">Explore cars</button></a>
+    </section>
+
+    <!-- home section ends  -->
+
+    <!-- icon section starts  -->
+    <section>
+        <div class="icon-container">
+            <div class="icons">
+                <i class="fa-solid fa-house"></i>
+                <div class="content">
+                    <h3>100+</h3>
+                    <p>Branches</p>
+                </div>
+            </div>
+
+
+            <div class="icons">
+                <i class="fa-solid fa-car"></i>
+                <div class="content">
+                    <h3>3100+</h3>
+                    <p>cars sold</p>
+                </div>
+            </div>
+
+            <div class="icons">
+                <i class="fa-solid fa-users"></i>
+                <div class="content">
+                    <h3>500+</h3>
+                    <p>happy clients</p>
+                </div>
+            </div>
+
+            <div class="icons">
+                <i class="fa-solid fa-car"></i>
+                <div class="content">
+                    <h3>300+</h3>
+                    <p>new cars</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- icon section ends  -->
+
+    <!-- vehicle section starts  -->
+    <section class="vehicles" id="vehicles">
+        <h1 class="heading">popular <span>vehicles</span> </h1>
+        <div class="box-container">
+            <div class="box1">
+                <img class="carimages" id="carhover1" src="creta2.jpg" alt="">
+                <div class="content">
+                    <h3>HYUNDAI CRETA</h3>
+                    <h4>price Rs. 1,200,000</h4>
+                    <p>
+                        new
+                        <i class="fa-solid fa-circle"></i>2023
+                        <i class="fa-solid fa-circle"></i>automatic
+                        <i class="fa-solid fa-circle"></i>petrol
+                        <i class="fa-solid fa-circle"></i>183mph
+                    </p>
+                    <a href="#" class="btn">Check out</a>
+                </div>
+            </div>
+
+
+            <div class="box1">
+                <img class="carimages" id="carhover2" src="fortuner2.jpg" alt="">
+                <div class="content">
+                    <h3>TOYATA FORTUNER</h3>
+                    <h4>price Rs. 4,200,000</h4>
+                    <p>
+                        new
+                        <i class="fa-solid fa-circle"></i>2023
+                        <i class="fa-solid fa-circle"></i>automatic
+                        <i class="fa-solid fa-circle"></i>petrol
+                        <i class="fa-solid fa-circle"></i>183mph
+                    </p>
+                    <a href="#" class="btn">Check out</a>
+                </div>
+            </div>
+
+            <div class="box1">
+                <img class="carimages" id="carhover3" src="thar1.jpg" alt="">
+                <div class="content">
+                    <h3>MAHINDRA THAR</h3>
+                    <h4>price Rs. 1,800,000</h4>
+                    <p>
+                        new
+                        <i class="fa-solid fa-circle"></i>2023
+                        <i class="fa-solid fa-circle"></i>automatic
+                        <i class="fa-solid fa-circle"></i>petrol
+                        <i class="fa-solid fa-circle"></i>183mph
+                    </p>
+                    <a href="#" class="btn">Check out</a>
+                </div>
+            </div>
+
+            <div class="box1">
+                <img class="carimages" id="carhover4" src="xuv1.jpg" alt="">
+                <div class="content">
+                    <h3>MAHINDRA XUV700</h3>
+                    <h4>price Rs. 2,200,000</h4>
+                    <p>
+                        new
+                        <i class="fa-solid fa-circle"></i>2023
+                        <i class="fa-solid fa-circle"></i>automatic
+                        <i class="fa-solid fa-circle"></i>petrol
+                        <i class="fa-solid fa-circle"></i>183mph
+                    </p>
+                    <a href="#" class="btn">Check out</a>
+                </div>
+            </div>
+
+            <div class="box1">
+                <img class="carimages" id="carhover5" src="verna1.jpg" alt="">
+                <div class="content">
+                    <h3>HYUNDAI VERNA</h3>
+                    <h4>price Rs. 2,200,000</h4>
+                    <p>
+                        new
+                        <i class="fa-solid fa-circle"></i>2023
+                        <i class="fa-solid fa-circle"></i>automatic
+                        <i class="fa-solid fa-circle"></i>petrol
+                        <i class="fa-solid fa-circle"></i>183mph
+                    </p>
+                    <a href="#" class="btn">Check out</a>
+                </div>
+            </div>
+
+            <div class="box1">
+                <img class="carimages" id="carhover6" src="hector1.jpg" alt="">
+                <div class="content">
+                    <h3>MG HECTOR</h3>
+                    <h4>price Rs. 3,200,000</h4>
+                    <p>
+                        new
+                        <i class="fa-solid fa-circle"></i>2023
+                        <i class="fa-solid fa-circle"></i>automatic
+                        <i class="fa-solid fa-circle"></i>petrol
+                        <i class="fa-solid fa-circle"></i>183mph
+                    </p>
+                    <button class="btn" onclick="hello2()">Check out</button>
+                </div>
+            </div>
+
+            <div class="box1">
+                <img class="carimages" id="carhover7" src="jeep1.jpg" alt="">
+                <div class="content">
+                    <h3>JEEP CHEROKEE</h3>
+                    <h4>price Rs. 7,200,000</h4>
+                    <p>
+                        new
+                        <i class="fa-solid fa-circle"></i>2023
+                        <i class="fa-solid fa-circle"></i>automatic
+                        <i class="fa-solid fa-circle"></i>petrol
+                        <i class="fa-solid fa-circle"></i>183mph
+                    </p>
+                    <button class="btn" onclick="hello2()">Check out</button>
+                </div>
+            </div>
+            <div class="box1">
+                <img class="carimages" id="carhover8" src="kia1.jpg" alt="">
+                <div class="content">
+                    <h3>KIA SELTOS</h3>
+                    <h4>price Rs. 1,900,000</h4>
+                    <p>
+                        new
+                        <i class="fa-solid fa-circle"></i>2023
+                        <i class="fa-solid fa-circle"></i>automatic
+                        <i class="fa-solid fa-circle"></i>petrol
+                        <i class="fa-solid fa-circle"></i>183mph
+                    </p>
+                    <button class="btn" onclick="hello2()">Check out</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- vehicles section ends  -->
+
+    <!-- services section starts  -->
+    <section class="services" id="services">
+        <h1 class="heading">our <span>services</span> </h1>
+        <div class="box-container">
+            <div class="box1">
+                <i class="fa-solid fa-car"></i>
+                <h3>car selling</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box1">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h3>parts repair</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box1">
+                <i class="fa-solid fa-car-burst"></i>
+                <h3>car insurance</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box1">
+                <i class="fa-solid fa-car-battery"></i>
+                <h3>battery replacement</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box1">
+                <i class="fa-solid fa-gas-pump"></i>
+                <h3>oil change</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box1">
+                <i class="fa-solid fa-headset"></i>
+                <h3>24/7 support</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- service section ends  -->
+
+    <!-- featured section starts  -->
+    <section class="featured" id="featured">
+        <h1 class="heading"> <span>featured</span> cars</h1>
+        <div class="box-container">
+            <div class="box1">
+                <img class="carimages" id="carhover7" src="jeep1.jpg" alt="">
+                <div class="content">
+                    <h3>JEEP CHER0KEE</h3>
+                    <h4>price Rs. 7,200,000</h4>
+                    <p>
+                        new
+                        <i class="fa-solid fa-circle"></i>2023
+                        <i class="fa-solid fa-circle"></i>automatic
+                        <i class="fa-solid fa-circle"></i>petrol
+                        <i class="fa-solid fa-circle"></i>183mph
+                    </p>
+                    <button class="btn" onclick="hello2()">Check out</button>
+                </div>
+            </div>
+
+            <div class="box1">
+                <img class="carimages" id="carhover3" src="thar1.jpg" alt="">
+                <div class="content">
+                    <h3>MAHINDRA THAR</h3>
+                    <h4>price Rs. 1,800,000</h4>
+                    <p>
+                        new
+                        <i class="fa-solid fa-circle"></i>2023
+                        <i class="fa-solid fa-circle"></i>automatic
+                        <i class="fa-solid fa-circle"></i>petrol
+                        <i class="fa-solid fa-circle"></i>183mph
+                    </p>
+                    <a href="#" class="btn">Check out</a>
+                </div>
+            </div>
+
+            <div class="box1">
+                <img class="carimages" id="carhover2" src="fortuner2.jpg" alt="">
+                <div class="content">
+                    <h3>TOYATA FORTUNER</h3>
+                    <h4>price Rs. 4,200,000</h4>
+                    <p>
+                        new
+                        <i class="fa-solid fa-circle"></i>2023
+                        <i class="fa-solid fa-circle"></i>automatic
+                        <i class="fa-solid fa-circle"></i>petrol
+                        <i class="fa-solid fa-circle"></i>183mph
+                    </p>
+                    <a href="#" class="btn">Check out</a>
+                </div>
+            </div>
+
+
+            <div class="box1">
+                <img class="carimages" id="carhover6" src="hector1.jpg" alt="">
+                <div class="content">
+                    <h3>MG HECTOR</h3>
+                    <h4>price Rs. 3,200,000</h4>
+                    <p>
+                        new
+                        <i class="fa-solid fa-circle"></i>2023
+                        <i class="fa-solid fa-circle"></i>automatic
+                        <i class="fa-solid fa-circle"></i>petrol
+                        <i class="fa-solid fa-circle"></i>183mph
+                    </p>
+                    <button class="btn" onclick="hello2()">Check out</button>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- featured section ends  -->
+
+
+    <!-- subscribe section starts  -->
+    <section class="subscribe">
+        <h3>subscribe for latest updates</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+
+        <form action="">
+            <input type="email" placeholder="Enter Your Mail">
+            <input type="submit" value="submit now">
+        </form>
+    </section>
+
+    <!-- subscribe section ends  -->
+
+    <!-- review section start  -->
+    <section class="reviews" id="reviews">
+        <h1 class="heading">client's <span>review</span> </h1>
+        <table class="table">
+            <tr class="one">
+                <td colspan="3">
+                    <img src="img1.jpeg" alt="">
+                </td>
+                <td colspan="3">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit
+                        amet consectetur,
+                        adipisicing elit. Provident, accusantium. </p>
+                    <h3>Enaya</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </td>
+            </tr>
+            <tr class="two">
+                <td colspan="3">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit
+                        amet consectetur,
+                        adipisicing elit. Provident, accusantium. </p>
+                    <h3>John devis</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </td>
+                <td colspan="3">
+                    <img src="img2.jpeg" alt="">
+                </td>
+            </tr>
+            <tr class="three">
+                <td colspan="3">
+                    <img src="img3.jpeg" alt="">
+                </td>
+                <td colspan="3">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit
+                        amet consectetur,
+                        adipisicing elit. Provident, accusantium. </p>
+                    <h3>Messica</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </td>
+            </tr>
+            <tr class="four">
+                <td colspan="3">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit
+                        amet consectetur,
+                        adipisicing elit. Provident, accusantium. </p>
+                    <h3>John devis</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </td>
+                <td colspan="3">
+                    <img src="img4.jpeg" alt="">
+                </td>
+            </tr>
+        </table>
+    </section>
+    <!-- review section ends  -->
+
+    <!-- contact section starts  -->
+    <script>
+        function hello() {
+            var first = document.getElementById("first");
+            var second = document.getElementById("second");
+            var number = document.getElementById("number");
+            if (first.value == "") {
+                first.style.border = '2px solid red';
+                nameerr.style.visibility = 'visible';
+                return false;
+            }
+            if (second.value == "") {
+                second.style.border = '2px solid red';
+                mailerr.style.visibility = 'visible';
+                return false;
+            }
+            if (isNaN(number.value)) {
+                number.style.border = "2px solid red";
+                numbererr.style.visibility = 'visible';
+                return false;
+            }
+            if (number.value.length != 10) {
+                alert("Please enter 10 digit number");
+                number.style.border = "2px solid red";
+                numbererr.style.visibility = 'visible';
+                return false;
+            }
+            else {
+                alert("Form submitted successfully")
+            }
+        }
+    </script>
+    <section class="contact" id="contact">
+        <h1 class="heading"> <span>contact</span> us</h1>
+        <div class="row">
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3563238.2241262314!2d76.0389249!3d29.290406899999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390db00b8670400b%3A0x732eaab4aaa6c143!2sHaryana!5e0!3m2!1sen!2sin!4v1684686021571!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form action="" onsubmit="return hello()">
+                <h1>get in touch</h1>
+                <input type="text" id="first" placeholder=" Customer Name" class="box"><br>
+                <label for="first" id="nameerr" style="visibility: hidden;color: red;">Please enter
+                    username</label><br>
+                <input type="email" id="second" placeholder="Email" class="box"><br>
+                <label for="second" id="mailerr" style="visibility: hidden;color: red;">Please enter
+                    email</label><br>
+                <input type="text" id="number" placeholder="Phone Number" class="box"><br>
+                <label for="number" id="numbererr" style="visibility: hidden;color: red;">Please enter
+                    number</label><br>
+                <textarea placeholder="Message" id="" cols="30" rows="10" class="box"></textarea>
+                <input type="submit" value="Send message" class="btn">
+            </form>
+        </div>
+    </section>
+    <!-- contact section ends  -->
+
+    <!-- footer section starts  -->
+    <section class="footer">
+        <div class="footer-box-container">
+            <div class="box">
+                <h3>our branches</h3>
+                <a href="#"><i class="fa-solid fa-location-dot"></i> India </a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i> France </a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i> africa </a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i> australia </a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i> russia </a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home"><i class="fa-solid fa-arrow-right"></i>home</a>
+                <a href="#vehicles"><i class="fa-solid fa-arrow-right"></i>vehicles</a>
+                <a href="#services"><i class="fa-solid fa-arrow-right"></i>services</a>
+                <a href="#features"><i class="fa-solid fa-arrow-right"></i>featured</a>
+                <a href="#reviews"><i class="fa-solid fa-arrow-right"></i>reviews</a>
+                <a href="#contact"><i class="fa-solid fa-arrow-right"></i>contact</a>
+
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#"><i class="fa-solid fa-phone"></i> +123-456-7890</a>
+                <a href="#"><i class="fa-solid fa-phone"></i> +111-222-3333</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i> CarSell24X7</a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i> haryana, india</a>
+
+            </div>
+
+            <div class="box">
+                <h3>social media</h3>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i> facebook</a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> instagram</a>
+                <a href="#"><i class="fa-brands fa-twitter"></i> twitter</a>
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> linkedin</a>
+                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i> pinterest</a>
+            </div>
+        </div>
+        <div class="copyright">copyright &copy; | all rights reserved</div>
+    </section>
+    <!-- footer section ends  -->
+
+
+    <!-- font awesome link  -->
+    <script src="https://kit.fontawesome.com/ca9a6c5a17.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Let's Register</title>
+    <script src="login.js"></script>
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="logo.jpg" type="image/icon type">
+
+
+</head>
+
+<body>
+    <div class="form">
+        <center>
+            <form method="post" action="" name="product" id="product">
+                <h1>Register</h1>
+
+                <label for="naem">Name*</label>
+                <input class="fil" type="text" id="name1" name="Name" placeholder="Enter Name">
+                <label for="naem" id="namerr" style="visibility: hidden;color: red;">Please Enter Name</label><br>
+
+                <label for="naem">Phone Number*</label>
+                <input type="tel" name="Phone Number" id="phone" placeholder="Enter Phone Number" class="fil"><br>
+                <label for="naem" id="phonerr" style="visibility: hidden;color: red;">Please Enter Phone
+                    Number</label><br>
+
+                <label for="naem">Email*</label>
+                <input class="fil" type="text" id="email" name="Email" placeholder="Enter Email">
+                <label for="naem" id="emailerr" style="visibility: hidden;color: red;">Please Enter Email</label><br>
+
+                <label for="naem">Password*</label>
+                <input class="fil" type="password" id="pass" name="pass" placeholder="Enter Password">
+                <label for="" id="passerr" style="visibility: hidden;color: red;">Please Enter Password</label>
+
+                <label for="naem">Confirm Password*</label>
+                <input class="fil" type="password" name="password" id="cpass" placeholder="Re-enter Password">
+                <label for="" id="cpasserr" style="visibility: hidden;color: red;">Please Re-enter Password</label>
+
+                <button onclick="check()" class="click">Submit &#10132;</button>
+
+            </form>
+        </center>
+
+    </div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz8So-5tK9S1SFqTlZmfLoogp_f_zPYf2IhBAxqn-BLGFCH06-93GcyAe8HVIIXRKgg/exec'
+        const form = document.forms['product']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("Thank you! your form is submitted successfully."))
+                .then(() => { window.location.reload(); })
+                .catch(error => console.error('Error!', error.message))
+            window.open('http://127.0.0.1:5500/folder/index.html')
+        })
+
+    </script>
+</body>
+
+</html>
